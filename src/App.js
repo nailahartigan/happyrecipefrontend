@@ -7,10 +7,9 @@ import Signup from "./pages/Signup/Signup";
 function App() {
   return (
     <div>
-      {/* <AboutUs></AboutUs> */}
-      {/* <Test></Test> */}
-      {/* <GuestRecipePost/> */}
-      <Signup></Signup>
+      naila
+      <GuestRecipePost />
+      main
     </div>
   );
 }

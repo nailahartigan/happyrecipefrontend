@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Navbar from "../../components/navbar/Index";
 import "../../styles/Signup.css";
+import salad from "../../pictures/salad";
 
 const Signup = () => {
   const [email, setEmail] = useState();
@@ -17,7 +18,9 @@ const Signup = () => {
         <Navbar></Navbar>
       </div>
       <div className="body">
-        <div className="leftBody">Image</div>
+        <div className="leftBody">
+          <img src="" />
+        </div>
         <div className="rightBody">
           <h2>Signup</h2>
           <Input
