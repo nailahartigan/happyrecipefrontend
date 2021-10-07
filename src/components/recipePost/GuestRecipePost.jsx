@@ -18,7 +18,7 @@ import thaipic from "../../pictures/thai.PNG";
 function GuestRecipePost() {
     
     return (
-        <div>
+        <div>       
             <Navbar/>
        
         <div className="post">
