@@ -6,7 +6,9 @@ import GuestRecipePost from './components/recipePost/GuestRecipePost';
 function App() {
   return (
     <div>
+    naila
       <GuestRecipePost/>
+    main
     </div>
   );
 }
