@@ -3,14 +3,20 @@ import { useState } from "react";
 import Navbar from "../../components/navbar/Index";
 import "../../styles/Signup.css";
 import salad from "../../pictures/salad.jpg";
+import { SignupRequest } from "./SignupFetch";
 
 const Signup = () => {
+  const [username, setUsername] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [user, setUser] = useState([]);
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
+    await SignupRequest(username, email, password, setUser);
+    setUsername("");
+    setEmail("");
+    setPassword("");
   };
   return (
     <div className="main">
@@ -24,9 +30,11 @@ const Signup = () => {
         <div className="rightBody">
           <h2>Signup</h2>
           <Input
+            username={username}
             email={email}
             password={password}
             user={user}
+            setUsername={setUsername}
             setEmail={setEmail}
             setPassword={setPassword}
             setUser={setUser}
@@ -38,13 +46,13 @@ const Signup = () => {
   );
 };
 
-const Input = ({ setUser, setEmail, setPassword, submitHandler }) => {
+const Input = ({ user, setUsername, setEmail, setPassword, submitHandler }) => {
   return (
     <form onSubmit={submitHandler} className="inputBlock">
       <input
         placeholder="username"
         type="text"
-        onChange={(e) => setUser(e.target.value)}
+        onChange={(e) => setUsername(e.target.value)}
       />
       <input
         placeholder="email"
@@ -58,6 +66,7 @@ const Input = ({ setUser, setEmail, setPassword, submitHandler }) => {
       />
       <button type="submit">Signup</button>
       {/* <input placeholder="re-type password" type="password" /> */}
+      <h1>{user ? `Welcome ${(user.username, user.email)}` : "No User"}</h1>
     </form>
   );
 };
