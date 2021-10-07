@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Navbar from "../../components/navbar/Index";
 import "../../styles/Signup.css";
-import salad from "../../pictures/salad";
+import salad from "../../pictures/salad.jpg";
 
 const Signup = () => {
   const [email, setEmail] = useState();
@@ -19,7 +19,7 @@ const Signup = () => {
       </div>
       <div className="body">
         <div className="leftBody">
-          <img src="" />
+          <img src={salad} />
         </div>
         <div className="rightBody">
           <h2>Signup</h2>
