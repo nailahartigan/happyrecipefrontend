@@ -1,6 +1,6 @@
-import React from 'react'
-import Navbar from '../components/navbar/Index'
-import GuestRecipePost from '../components/recipePost/GuestRecipePost'
+import React from 'react';
+import Navbar from '../components/navbar/Index';
+import GuestRecipePost from '../components/recipePost/GuestRecipePost';
 
 function GuestHomePage() {
     return (

@@ -1,6 +1,7 @@
+import '../../styles/GuestHomePage.css';
 import React from 'react';
 import Navbar from '../navbar/Index';
-import '../../styles/GuestHomePage.css';
+import americanpic from "../../pictures/american.PNG"
 
 function GuestRecipePost() {
     
@@ -10,7 +11,7 @@ function GuestRecipePost() {
        
     <div className="post">
             <div className="cuisine1">
-        <img className="american" src = "/american.PNG" alt="American"/>
+        <img className="american" src = {americanpic} alt="American"/>
         <div className="AMERICAN">AMERICAN</div>
         <img className="asian" src = "/asian.PNG" alt="Asian"/>
         <div className="ASIAN">ASIAN</div>

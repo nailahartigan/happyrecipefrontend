@@ -1,6 +1,5 @@
 import './App.css';
 import GuestRecipePost from './components/recipePost/GuestRecipePost';
-import './index.css';
 import AboutUs from './pages/aboutUs';
 import Test from './pages/Test';
 
