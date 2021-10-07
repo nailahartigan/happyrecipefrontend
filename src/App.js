@@ -12,6 +12,11 @@ import {
 
 function App() {
   return (
+
+    <div>
+      <Signup />
+    </div>
+
     <Router>
       <Switch>
         <Route path ="/Aboutus">
