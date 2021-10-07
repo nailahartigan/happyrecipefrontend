@@ -20,8 +20,16 @@
   .leftBody{
     border: 1px solid gray;
     width:50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
     /* height: 100vh; */
   }
+  /* .leftBody img{
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  } */
   .inputBlock {
     display: flex;
     flex-direction: column;

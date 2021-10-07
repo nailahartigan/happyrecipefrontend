@@ -7,9 +7,7 @@ import Signup from "./pages/Signup/Signup";
 function App() {
   return (
     <div>
-      naila
-      <GuestRecipePost />
-      main
+      <Signup />
     </div>
   );
 }
