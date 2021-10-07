@@ -1,4 +1,4 @@
-import '../../styles/GuestHomePage.css';
+import '../recipePost/GuestHomePage.css';
 import React from 'react';
 import Navbar from '../navbar/Index';
 import americanpic from "../../pictures/american.PNG";
@@ -18,7 +18,7 @@ import thaipic from "../../pictures/thai.PNG";
 function GuestRecipePost() {
     
     return (
-        <div>
+        <div>       
             <Navbar/>
        
         <div className="post">
