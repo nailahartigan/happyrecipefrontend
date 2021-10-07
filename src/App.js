@@ -8,8 +8,6 @@ function App() {
   return (
     <div>
       <AboutUs></AboutUs>
-      <Test></Test>
-      <GuestRecipePost/>
     </div>
   );
 }
