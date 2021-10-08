@@ -1,0 +1,59 @@
+.btn{
+    background-color:cornsilk;
+    width:100px;
+      height: 50px;
+  
+  }
+  .main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* .userDisplay{
+    font-size: larger;
+  } */
+  .body{
+    display: flex;
+    height: 100vh;
+  
+  }
+  .leftBody{
+    border: 1px solid gray;
+    width:50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+  }
+  /* .leftBody img{
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  } */
+  .inputBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputBlock input{
+    font-size: larger;
+    width: 300px;
+    height: 50px;
+    margin: 20px;
+  }
+  .inputBlock button{
+    background-color: rgb(117, 184, 158);
+    width: 150px;
+    height: 50px;
+  }
+  .rightBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(240, 255, 255);
+    border: 1px solid gray;
+    width:50%
+  }
