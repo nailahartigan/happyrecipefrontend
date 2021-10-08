@@ -1,3 +1,6 @@
+body{
+  box-sizing: border-box;
+}
 .btn{
     background-color:cornsilk;
     width:100px;
@@ -19,17 +22,18 @@
   }
   .leftBody{
     border: 1px solid gray;
-    width:50%;
+    width:75%;
     overflow: hidden;
     background-size: cover;
     background-position: center;
     /* height: 100vh; */
   }
-  /* .leftBody img{
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-  } */
+  .leftBody img{
+    max-width: 100%;
+    height:100%;
+    object-fit: cover;
+    /* object-position: center; */
+  }
   .inputBlock {
     display: flex;
     flex-direction: column;
@@ -37,13 +41,14 @@
     align-items: center;
   }
   .inputBlock input{
+    border: .5px solid rgba(150, 231, 218,.5);
     font-size: larger;
     width: 300px;
     height: 50px;
     margin: 20px;
   }
   .inputBlock button{
-    background-color: rgb(117, 184, 158);
+    background-color: rgba(117, 184, 158,.5);
     width: 150px;
     height: 50px;
   }

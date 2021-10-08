@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Navbar from "../../components/navbar/Index";
 import "../../styles/Signup.css";
-import salad from "../../pictures/salad.jpg";
+import meal from "../../pictures/meal.jpg";
 import { SignupRequest } from "./SignupFetch";
 
 const Signup = () => {
@@ -14,9 +14,13 @@ const Signup = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
     await SignupRequest(username, email, password, setUser);
-    setUsername("");
-    setEmail("");
-    setPassword("");
+    const blankUsername = "";
+    const blankEmail = "";
+    const blankPassword = "";
+
+    setUsername("you");
+    setEmail();
+    setPassword();
   };
   return (
     <div className="main">
@@ -25,7 +29,7 @@ const Signup = () => {
       </div>
       <div className="body">
         <div className="leftBody">
-          <img src={salad} />
+          <img src={meal} />
         </div>
         <div className="rightBody">
           <h2>Signup</h2>
