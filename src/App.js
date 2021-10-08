@@ -1,15 +1,11 @@
-import './App.css';
-import GuestRecipePost from './components/recipePost/GuestRecipePost';
-import AboutUs from './pages/aboutUs';
-import Test from './pages/Test';
+import React from "react";
+import Login from './pages/Login';
 
 
 function App() {
   return (
     <div>
-      <AboutUs></AboutUs>
-      <Test></Test>
-      <GuestRecipePost/>
+      <Login></Login>
     </div>
   );
 }
