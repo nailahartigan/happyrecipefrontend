@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Navbar from "../../components/navbar/Index";
+import Navbar from "../../components/navbar/Homepage";
 import "../../styles/Signup.css";
 import meal from "../../pictures/meal.jpg";
 import { SignupRequest } from "./SignupFetch";

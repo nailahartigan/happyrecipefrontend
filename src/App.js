@@ -18,6 +18,9 @@ function App() {
         <Route path="/Signup">
           <Signup />
         </Route>
+        <Route path="/Login">
+          <Login />
+        </Route>
         <Route path="/Guest">
           <GuestRecipePost />
         </Route>
