@@ -1,11 +1,13 @@
 
 import React from "react";
-import Login from './pages/Login';
+
 
 import './App.css';
 import GuestRecipePost from './components/recipePost/GuestRecipePost.jsx';
 import AboutUs from './pages/aboutUs';
 import Signup from './pages/Signup/Signup';
+import Login from './pages/Login';
+import UserHP from './pages/userHomePage';
 
 
 import {
@@ -28,6 +30,12 @@ function App() {
         </Route>
         <Route path ="/Guest">
          <GuestRecipePost/>
+        </Route>
+        <Route path ="/login">
+         <Login/>
+        </Route>
+        <Route path ="/UserHP">
+         <UserHP/>
         </Route>
       </Switch>
     </Router>

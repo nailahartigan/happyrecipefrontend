@@ -3,6 +3,30 @@
     justify-content: center;
     padding-top: 35px;
 }
+.post{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.title{
+    
+    position: absolute;
+    padding-left: 340px;
+    padding-top: 85px;
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+    left: 10px;
+}
+
+.postImage{
+    border-radius: 50% 50% 50% 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 200px;
+    width: 230px;
+}
 
 .american {
     border-radius: 50% 50% 50% 50%;
